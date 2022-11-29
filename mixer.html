@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg"/>
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="version8/assets/css/main-color.css">
+
+    <!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="./styles/util.css">
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Fruit Mixing</title>
+</head>
+<body>
+
+    <header id="header" style="z-index: 999999;background: white;width: 100%;" class="header-area style-01 layout-03">
+
+        <div class="header-middle biolife-sticky-object ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-md-6 col-xs-6">
+                        <a href="index-2.html" class="biolife-logo"><img src="./images/logo.svg" alt="biolife logo" width="135" height="34"></a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
+                        <div class="primary-menu">
+                        <ul class="menu biolife-menu clone-main-menu clone-primary-menu" id="biolife-clone-primary-menu" data-menuname="main menu">
+                            <li class="menu-item"><a style="font-size: x-large !important;" href="index-2.html">Accueil</a></li>
+                            <li class="menu-item"><a style="font-size: x-large !important;" href="index-2.html">À Propos</a></li>
+                            <li class="menu-item"><a style="font-size: x-large !important;" href="index-2.html">Contact</a></li>
+                            
+                            <li class="menu-item">
+                                <div class="container-login100-form-btn">
+                                    <div class="wrap-login100-form-btn">
+                                        <div class="login100-form-bgbtn" id="btncomposer"></div>
+                                        <button style="font-size: large !important;" class="login100-form-btn">
+                                            Composer
+                                        </button>
+                                    </div>
+                                </div>	                
+                            </li>                            
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-md-6 col-xs-6">
+                        <div class="biolife-cart-info">
+                            <div class="mobile-search">
+                                
+                                <div class="mobile-search-content">
+                                    <form action="#" class="form-search" name="mobile-seacrh" method="get">
+                                        <a href="#" class="btn-close"><span class="biolife-icon icon-close-menu"></span></a>
+                                        <input type="text" name="s" class="input-text" value="" placeholder="Search here...">
+                                        <select name="category" style="display: none;">
+                                            <option value="-1" selected="">All Categories</option>
+                                            <option value="vegetables">Vegetables</option>
+                                            <option value="fresh_berries">Fresh Berries</option>
+                                            <option value="ocean_foods">Ocean Foods</option>
+                                            <option value="butter_eggs">Butter &amp; Eggs</option>
+                                            <option value="fastfood">Fastfood</option>
+                                            <option value="fresh_meat">Fresh Meat</option>
+                                            <option value="fresh_onion">Fresh Onion</option>
+                                            <option value="papaya_crisps">Papaya &amp; Crisps</option>
+                                            <option value="oatmeal">Oatmeal</option>
+                                        </select><div class="nice-select" tabindex="0"><span class="current">All Categories</span><ul class="list"><li data-value="-1" class="option selected">All Categories</li><li data-value="vegetables" class="option">Vegetables</li><li data-value="fresh_berries" class="option">Fresh Berries</li><li data-value="ocean_foods" class="option">Ocean Foods</li><li data-value="butter_eggs" class="option">Butter &amp; Eggs</li><li data-value="fastfood" class="option">Fastfood</li><li data-value="fresh_meat" class="option">Fresh Meat</li><li data-value="fresh_onion" class="option">Fresh Onion</li><li data-value="papaya_crisps" class="option">Papaya &amp; Crisps</li><li data-value="oatmeal" class="option">Oatmeal</li></ul></div>
+                                        <button type="submit" class="btn-submit">go</button>
+                                    </form>
+                                </div>
+                            </div>
+
+<!--*********************************-->
+<!--*********************************-->
+<!--*********************************-->
+                            <div class="wishlist-block hidden-sm hidden-xs">
+                            </div>
+                            
+<!--*********************************-->
+<!--*********************************-->
+<!--*********************************-->
+
+                            <div class="mobile-menu-toggle">
+                                <a class="btn-toggle" data-object="open-mobile-menu" href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+    <div class="parent">
+        <div class="sideTabs">
+            <div class="tabs btn" id="0">La base N 1<i class="fa"> &#x3E;</i></div>
+            <div class="tabs btn" id="1">La base N 2 <i class="fa">&#x3E;</i></div>
+            <div class="tabs btn" id="2">Supplément fruits secs <i class="fa">&#x3E;</i></div>
+            <div class="tabs btn" id="3">Supplément Fruits <i class="fa">&#x3E;</i></div>
+            <div class="tabs btn" id="4">Supplément sauce <i class="fa">&#x3E;</i></div>
+        </div>
+
+        <div class="arrowAndProdsContainer"> 
+            <div class="tache"><h2>Select Something</h2></div>
+            <div class="products d-flex flex-column">
+
+
+                <div class='categoryContainer' id="products0">
+                    <div value='base1' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-left" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h4 style="text-align: center;">La base N 1 </h4>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                    <div price="20" value='fromage frais' class="produit base1">
+                        <div class="imgContainer">
+                            <img class="img images" src="./images/cheese.jpg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>fromage Frais</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div price="20" value='raib' class="produit base1">
+                        <div class="imgContainer">
+                            <img class="img images" src="./images/yogurt.jpg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Raib </h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">21DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div value='base1' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-left" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h4 style="text-align: center;">La base N 1 </h4>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                </div>
+
+                <div class='categoryContainer active' id="products1">
+                    <div value='base2' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-left" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">La base N 2:</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                    <div price="20" value='Flocon avoine' class="produit base2">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/oats.jpg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Flocon d'avoine </h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div price="20" value='ble' class="produit base2">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/wheat.jpg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Blé </h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">21DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div value='base2' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-left" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">La base N 2:</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                </div>
+
+
+
+                <div class='categoryContainer' id="products2">
+
+                    <div value='supplementFruitsSec' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément fruits secs :</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                    <div price="20" value='Amandes' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/almonds.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Amandes</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Acajou' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/acajou.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Acajou</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Dates' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/dattes.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Dattes</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Abricot sec' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/apricot sec.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Abricot sec</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Ananas sec' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/ananas sec.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Ananas sec</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Noisettes' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/noisettes.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Noisettes</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Raisin sec' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/raisin sec.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Raisin sec</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Pistache' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/pistachio.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Pistache</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Noix' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/noix.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Noix</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Cacahuètes' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/cacahuete.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Cacahuètes</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div value='supplementFruitsSec' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément fruits secs :</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                </div>
+
+                
+                <div class='categoryContainer' id="products3">
+                    <div value='supplementFruits' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément Fruits :</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                    <div price="20" value='Banane' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/banana.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Banane</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Pommes' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/apples.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Pommes</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Framboise' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/framboise.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Framboise</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Fraises' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/fraise.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Fraises</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Kiwi' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/kiwi.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Kiwi</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Poires' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/pears.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Poires</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Avocat' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/avocat.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Avocat</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div value='supplementFruits' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément Fruits :</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                </div>
+
+
+                <div class='categoryContainer' id="products4">
+                    <div value='supplementSauce' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément sauce</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                    <div price="20" value='Nutella' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/nutella.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Nutella</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+
+                    <div price="20" value='Milka' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/milka.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Milka</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Mars' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/mars.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Mars</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    
+                    <div price="20" value='Bounty' class="produit">
+                        <div class="img imgContainer">
+                            <img class="img images" src="./images/bounty.svg">
+                        </div>
+                        <div class="infoContainer">
+                            <div class="prodName"><h5>Bounty</h5></div>
+                            <div class="qty"><h5>x 1</h5></div>
+                            <div class="price">215DH</div>
+                            <div class='roundedBtn'>+</div>
+                        </div>
+                    </div>
+                    <div value='supplementFruits' class="title">
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(-1)"><</i>
+                        <h5 style="text-align: center;">Supplément Fruits :</h5>
+                        <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                        onclick="handleArrows(1)">></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="arrows">
+                <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-left" 
+                onclick="handleArrows(-1)"><</i>
+                <i style='font-size:20px;color: aliceblue; font-weight: 1000;cursor: pointer;' class="arrow btn float-right" 
+                onclick="handleArrows(1)">></i>
+            </div>
+        </div>
+        <div class="container container-fluid p-3">
+            <div class="cup">
+                <div style="margin-bottom: 2em;" class="btnContainer">
+                    <div class="confDelContainer">
+                        <button id="btnConfirm" style="display: none;"
+                        onclick='submit()' class="btn confirmBtn">Commander</button>
+                        <button id="btnDelete" style="display: none;" class="btn btn-danger deleteBtn" 
+                        onclick="deleteAll(this, document.getElementById('btnChoisir'))">Supprimer tous</button>
+                    </div>
+                    <button id="btnChoisir" style="display: inline-block;" class="btn"
+                    onclick="redirectToBase()">Choisir une base</button>
+                    <div id="total"><div>Total: </div>0 DH</div>
+                </div>
+                <div class="addedProdsContainer"></div>
+            </div>
+            <div class="confirmAll" style="display: none;">
+                <button onclick="goBackfct()" id="goBackArrow" class="btn btn-danger"><</button>
+                <img src="./images/logoWhiteBackground.png" style="height: 50px;margin-bottom: -5px;" class="img img-fluid" />
+                <form id="submitCommande">
+                    <div class="form-group">
+                      <label for="phoneNmber">Votre Numéro:</label>
+                      <input type="number" id="numeroDeTele" required class="form-control" placeholder=" saisissez votre numéro">
+                    </div>
+                    <div class="form-group">
+                      <label for="Surnom">Nom et prénom:</label>
+                      <input type="text" class="form-control" id="fullname" aria-describedby="fullname" placeholder="Saisisez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse">Votre adresse</label>
+                        <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Saisisez votre nom">
+                    </div>
+                    <button type="submit" class="submitBtn btn btn-primary d-none">Submit</button>
+                </form>
+                <hr class="horizontalRule" />
+                <div class="total"></div>
+                <button 
+                onclick='submit()' class="btn confirmBtn">Commander</button>
+            </div>
+        </div>
+        <div id="alertText" class="alertText mb-2" style="font-size: 15px;display: none;">
+            Bases 1 et 2 sont obligatoires.
+        </div>
+    </div>
+    
+    <script src="version8/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="version8/assets/js/bootstrap.min.js"></script>
+    <script src="version8/assets/js/jquery.countdown.min.js"></script>
+    <script src="version8/assets/js/jquery.nice-select.min.js"></script>
+    <script src="version8/assets/js/jquery.nicescroll.min.js"></script>
+    <script src="version8/assets/js/slick.min.js"></script>
+    <script src="version8/assets/js/biolife.framework.js"></script>
+    <script src="version8/assets/js/functions.js"></script>
+    <script type='text/javascript' src="./index.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8TSHCKCZP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V8TSHCKCZP');
+    </script>
+</body>
+</html>
